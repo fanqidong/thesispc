@@ -41,18 +41,18 @@
       </div>
       <div class="question-list">
         <div class="item">
-          <p>5.不知道如何修改？</p>
-          专业老师为您一对一服务
-        </div>
-      </div>
-      <div class="question-list">
-        <div class="item">
           <p>3.重复高被打回？</p>
           论文去重，高效快速，正规可查
         </div>
         <div class="item">
           <p>4.考不过毕业难？</p>
           精选优秀导师，全程服务
+        </div>
+      </div>
+      <div class="question-list">
+        <div class="item">
+          <p>5.不知道如何修改？</p>
+          专业老师为您一对一服务
         </div>
       </div>
       <div class="company-wrap">
@@ -142,13 +142,17 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.page {
+  background: rgb(245, 245, 245);
+}
 .nav-list {
   display: flex;
-  height: 50px;
-  color: #fff;
+  height: 60px;
+  color: #99ccff;
+  background: #212940;
   font-weight: 600;
   font-size: 18px;
-  background: url(../assets/nav-bg.png) no-repeat center/cover;
+  background: url(../assets/nav-bg.png) no-repeat center/top;
   .nav-item {
     width: 25%;
     display: flex;
@@ -157,18 +161,18 @@ export default {
   }
 }
 .banner {
-  height: 345px;
+  height: 500px;
   padding-top: 50px;
   text-align: center;
-  font-size: 36px;
+  font-size: 42px;
+  color: #fff;
   background: url(../assets/banner-bg.jpg) no-repeat center/cover;
   .red {
-    color: rgba(193, 25, 50, 1);
     margin-bottom: 40px;
   }
   .label {
-    color: rgb(34, 34, 34, 255);
-    font-size: 15px;
+    font-size: 30px;
+    margin-bottom: 70px;
   }
   .label-list {
     display: flex;
@@ -176,7 +180,7 @@ export default {
     padding: 0 20px;
     margin-top: 40px;
     color: #fff;
-    font-size: 15px;
+    font-size: 20px;
     .label-item {
       display: flex;
       align-items: center;
@@ -186,7 +190,7 @@ export default {
       width: 43px;
       height: 38px;
       background: no-repeat center/cover;
-      margin-bottom: 4px;
+      margin-bottom: 10px;
       &.icon1 {
         background-image: url(../assets/icon1.png);
       }
@@ -200,20 +204,19 @@ export default {
   }
 }
 .content {
-  min-height: 500px;
-  background: url(../assets/content-bg.jpg) no-repeat center/cover;
+  width: 1200px;
+  margin: auto;
   .title {
-    padding: 15px 0;
     text-align: center;
-    font-size: 20px;
-    color: rgb(0, 34, 34, 255);
+    font-size: 36px;
+    margin: 40px 0;
+    color: #333;
   }
 }
 .question-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 10px;
   color: #fff;
   font-size: 12px;
   .item {
@@ -221,28 +224,35 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 48%;
-    height: 88px;
+    width: 590px;
+    height: 220px;
     padding: 10px 4px 4px;
     border-radius: 4px;
     margin-bottom: 15px;
-    background: url(../assets/question.jpg) no-repeat center/cover;
+    background: #fff;
+    color: #333;
+    font-size: 22px;
+    box-shadow: 0px 0px 10px 0px #eeeeee;
     &.active {
       background: none;
     }
     p {
-      margin-bottom: 10px;
+      margin-bottom: 30px;
+      font-size: 32px;
+      color: rgb(75, 132, 245);
     }
   }
 }
 .company-wrap {
-  padding: 10px;
+  margin-top: 20px;
   .intro {
-    margin-bottom: 15px;
-    font-size: 13px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    text-align: center;
     .company-intro {
-      font-size: 18px;
+      font-size: 36px;
       font-weight: 500;
+      margin-bottom: 10px;
     }
   }
 }
@@ -251,33 +261,37 @@ export default {
   justify-content: space-between;
   flex-wrap: wrap;
   color: #fff;
-  font-size: 12px;
   .intro-item {
-    width: 48%;
+    width: 590px;
+    height: 220px;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 25px 10px 10px 10px;
     border-radius: 4px;
     margin-bottom: 15px;
     font-size: 12px;
-    background: url(../assets/intro-bg.jpg) no-repeat center/cover;
+    background: #fff;
+    color: #333;
+    font-size: 18px;
+    box-shadow: 0px 0px 10px 0px #eeeeee;
     .top {
-      font-size: 16px;
       padding-bottom: 2px;
-      margin-bottom: 4px;
+      margin-bottom: 20px;
       font-weight: 500;
       border-bottom: 1px solid;
+      font-size: 28px;
+      color: rgb(75, 132, 245);
     }
   }
 }
 .footer {
   text-align: center;
-  padding-bottom: 30px;
+  padding: 50px 0 0;
   .text {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 10px;
   }
   .icon {

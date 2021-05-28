@@ -164,13 +164,17 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.page {
+  background: rgb(245, 245, 245);
+}
 .nav-list {
   display: flex;
-  height: 50px;
-  color: #fff;
+  height: 60px;
+  color: #99ccff;
+  background: #212940;
   font-weight: 600;
   font-size: 18px;
-  background: url(../assets/nav-bg.png) no-repeat center/cover;
+  background: url(../assets/nav-bg.png) no-repeat center/top;
   .nav-item {
     width: 25%;
     display: flex;
@@ -179,18 +183,18 @@ export default {
   }
 }
 .banner {
-  height: 345px;
+  height: 450px;
   padding-top: 50px;
   text-align: center;
-  font-size: 36px;
+  font-size: 42px;
+  color: #fff;
   background: url(../assets/banner-bg.jpg) no-repeat center/cover;
   .red {
-    color: rgba(193, 25, 50, 1);
     margin-bottom: 40px;
   }
   .label {
-    color: rgb(34, 34, 34, 255);
-    font-size: 15px;
+    font-size: 30px;
+    margin-bottom: 70px;
   }
   .label-list {
     display: flex;
@@ -198,7 +202,7 @@ export default {
     padding: 0 20px;
     margin-top: 40px;
     color: #fff;
-    font-size: 15px;
+    font-size: 20px;
     .label-item {
       display: flex;
       align-items: center;
@@ -208,7 +212,7 @@ export default {
       width: 43px;
       height: 38px;
       background: no-repeat center/cover;
-      margin-bottom: 4px;
+      margin-bottom: 10px;
       &.icon1 {
         background-image: url(../assets/icon1.png);
       }
@@ -222,27 +226,29 @@ export default {
   }
 }
 .content {
-  min-height: 500px;
-  background: url(../assets/content-bg.jpg) no-repeat center/cover;
+  width: 1200px;
+  margin: auto;
   .title {
-    padding: 15px 0;
     text-align: center;
-    font-size: 20px;
-    color: rgb(0, 34, 34, 255);
+    font-size: 36px;
+    margin: 40px 0;
+    color: #333;
   }
 }
 .company-wrap {
-  padding: 10px;
   .intro {
     margin-bottom: 15px;
     font-size: 13px;
     text-align: center;
     .company-intro {
-      font-size: 18px;
+      margin-top: 20px;
+      font-size: 32px;
       font-weight: 500;
     }
     .blue {
       color: #568cf6;
+      font-size: 18px;
+      margin-bottom: 20px;
     }
   }
 }
@@ -253,26 +259,30 @@ export default {
   color: #fff;
   font-size: 12px;
   .intro-item {
-    width: 48%;
+    width: 590px;
+    height: 160px;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 25px 10px 10px 10px;
     border-radius: 4px;
     margin-bottom: 15px;
     font-size: 12px;
-    background: url(../assets/intro-bg.jpg) no-repeat center/cover;
+    background: #fff;
+    color: #333;
+    font-size: 18px;
+    box-shadow: 0px 0px 10px 0px #eeeeee;
     .top {
-      font-size: 16px;
       padding-bottom: 2px;
-      margin-bottom: 4px;
+      margin-bottom: 20px;
       font-weight: 500;
       border-bottom: 1px solid;
+      font-size: 28px;
+      color: rgb(75, 132, 245);
     }
   }
 }
 .footer {
   text-align: center;
-  padding-bottom: 30px;
   .text {
     display: flex;
     justify-content: space-between;
@@ -294,11 +304,12 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 40px 0;
   .school-item {
     margin-bottom: 10px;
     img {
-      width: 60px;
-      height: 60px;
+      width: 66px;
+      height: 66px;
       border-radius: 50%;
     }
   }
