@@ -38,18 +38,16 @@
           <p>2.学科偏门？</p>
           覆盖全学科，助你成功
         </div>
-      </div>
-      <div class="question-list">
         <div class="item">
           <p>3.重复高被打回？</p>
           论文去重，高效快速，正规可查
         </div>
+      </div>
+      <div class="question-list active">
         <div class="item">
           <p>4.考不过毕业难？</p>
           精选优秀导师，全程服务
         </div>
-      </div>
-      <div class="question-list">
         <div class="item">
           <p>5.不知道如何修改？</p>
           专业老师为您一对一服务
@@ -92,7 +90,7 @@
             服务流程分步骤一步步有序的进行，每一步都会和客户进行确认，有利于确认需求及及时修改，服务过程中有问题或者建议也会及时与客户沟通。
           </div>
         </div>
-        <div class="intro-list">
+        <div class="intro-list active">
           <div class="intro-item">
             <div class="top">免费咨询</div>
             <div class="bottom">
@@ -209,37 +207,35 @@ export default {
   .title {
     text-align: center;
     font-size: 36px;
-    margin: 40px 0;
+    margin: 30px 0;
     color: #333;
   }
 }
 .question-list {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   color: #fff;
-  font-size: 12px;
+  &.active {
+    padding: 0 204px;
+  }
   .item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 590px;
+    width: 385px;
     height: 220px;
     padding: 10px 4px 4px;
     border-radius: 4px;
-    margin-bottom: 15px;
-    background: #fff;
-    color: #333;
-    font-size: 22px;
-    box-shadow: 0px 0px 10px 0px #eeeeee;
+    margin-bottom: 17px;
+    background: url(../assets/question-bg.jpg) no-repeat center/cover;
+    font-size: 18px;
     &.active {
       background: none;
     }
     p {
       margin-bottom: 30px;
-      font-size: 32px;
-      color: rgb(75, 132, 245);
+      font-size: 28px;
     }
   }
 }
@@ -259,11 +255,15 @@ export default {
 .intro-list {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   color: #fff;
+  &.active {
+    .intro-item {
+      width: 228px;
+    }
+  }
   .intro-item {
-    width: 590px;
-    height: 220px;
+    width: 290px;
+    height: 280px;
     display: flex;
     flex-direction: column;
     padding: 25px 10px 10px 10px;
@@ -272,8 +272,9 @@ export default {
     font-size: 12px;
     background: #fff;
     color: #333;
-    font-size: 18px;
+    font-size: 15px;
     box-shadow: 0px 0px 10px 0px #eeeeee;
+    background: url(../assets/list-bg.jpg) no-repeat center/cover;
     .top {
       padding-bottom: 2px;
       margin-bottom: 20px;
@@ -281,6 +282,9 @@ export default {
       border-bottom: 1px solid;
       font-size: 28px;
       color: rgb(75, 132, 245);
+    }
+    .bottom {
+      line-height: 1.7;
     }
   }
 }
