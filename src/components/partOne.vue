@@ -1,11 +1,13 @@
 <template>
   <div class="page">
     <div class="header">
-      <div class="logo"></div>
-      <div class="nav-list">
-        <div class="nav-item one">首页</div>
-        <div class="nav-item two">关于我们</div>
-        <div class="nav-item three">在线咨询</div>
+      <div class="wrap">
+        <div class="logo"></div>
+        <div class="nav-list">
+          <div class="nav-item one">首页</div>
+          <div class="nav-item two">关于我们</div>
+          <div class="nav-item three">在线咨询</div>
+        </div>
       </div>
     </div>
     <div class="banner">
@@ -150,14 +152,14 @@
           </div>
         </div>
       </div>
-      <div class="footer">
-        <div class="text">
-          <span class="left-icon icon"></span>
-          <span>联系我们 · 随时为您服务！</span>
-          <span class="right-icon icon"></span>
-        </div>
-        <div>一秒咨询，随时在线，诚信服务，用心做人！！</div>
+    </div>
+    <div class="footer">
+      <div class="text">
+        <span class="left-icon icon"></span>
+        <span>联系我们 · 随时为您服务！</span>
+        <span class="right-icon icon"></span>
       </div>
+      <div>一秒咨询，随时在线，诚信服务，用心做人！！</div>
     </div>
   </div>
 </template>
@@ -175,13 +177,18 @@ export default {
 .header {
   position: fixed;
   width: 100%;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
   height: 80px;
-  align-items: center;
-  padding: 0 125px;
+  top: 0;
   background: #fff;
+  z-index: 999;
+  .wrap {
+    width: 1350px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+  }
   .logo {
     width: 66px;
     height: 66px;
@@ -227,6 +234,8 @@ export default {
     justify-content: space-around;
     padding: 0 20px;
     margin-top: 100px;
+    width: 1350px;
+    margin: 100px auto 0;
     color: #fff;
     font-size: 20px;
     .label-item {
@@ -261,6 +270,8 @@ export default {
   }
 }
 .content {
+  width: 1350px;
+  margin: auto;
   .title {
     text-align: center;
     font-size: 36px;
@@ -272,7 +283,7 @@ export default {
 .question-list {
   display: flex;
   justify-content: space-between;
-  padding: 25px 25px 0;
+  padding: 25px 0 0;
   color: #333;
   .item {
     display: flex;
@@ -280,7 +291,7 @@ export default {
     justify-content: space-between;
     padding: 40px 0;
     align-items: center;
-    width: 330px;
+    width: 24%;
     height: 380px;
     border-radius: 4px;
     background: #fff;
@@ -308,6 +319,7 @@ export default {
   }
 }
 .company-wrap {
+  margin: auto;
   .company-intro {
     text-align: center;
     font-size: 36px;
@@ -315,24 +327,22 @@ export default {
     margin: 40px 0;
   }
   .reason-wrap {
-    width: 1420px;
     height: 430px;
+    margin: auto;
     background: url(../assets/reason-bg.jpg) no-repeat center/cover;
   }
 }
 .sort-bg {
-  width: 1420px;
   height: 532px;
   background: url(../assets/sorts-bg.jpg) no-repeat center/cover;
 }
 .school-content {
   display: flex;
-  padding: 0 100px;
   .left {
     width: 585px;
     height: 530px;
     flex-shrink: 0;
-    margin-right: 20px;
+    margin-right: 50px;
     background: url(../assets/qikan.jpg) no-repeat center/cover;
   }
   .school-list {
@@ -346,13 +356,13 @@ export default {
         width: 180px;
         height: 180px;
         border-radius: 50%;
+        filter: blur(2px);
       }
     }
   }
 }
 .specail-list {
   display: flex;
-  width: 1200px;
   justify-content: space-between;
   margin: auto;
   .item {
