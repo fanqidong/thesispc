@@ -1,122 +1,151 @@
 <template>
   <div class="page">
     <div class="header">
+      <div class="logo"></div>
       <div class="nav-list">
-        <div class="nav-item">首页</div>
-        <div class="nav-item">论文咨询</div>
-        <div class="nav-item">期刊投稿</div>
-        <div class="nav-item">在线咨询</div>
+        <div class="nav-item one">首页</div>
+        <div class="nav-item two">关于我们</div>
+        <div class="nav-item three">在线咨询</div>
       </div>
     </div>
     <div class="banner">
-      <div>硕博资深团队</div>
-      <div class="red">一对一论文服务</div>
-      <div class="label">十年经验 ·覆盖全学科 ·论文/期刊/职称全方位服务</div>
+      <div>期刊投稿 论文咨询发表平台</div>
       <div class="label-list">
         <div class="label-item">
           <span class="icon icon1"></span>
-          全网低价
+          期刊类型丰富
         </div>
         <div class="label-item">
           <span class="icon icon2"></span>
-          合格付款
+          专业服务团队
         </div>
         <div class="label-item">
           <span class="icon icon3"></span>
-          全网可查
+          正规刊物发表
+        </div>
+        <div class="label-item">
+          <span class="icon icon4"></span>
+          完善售后服务
         </div>
       </div>
     </div>
     <div class="content">
-      <div class="title">你是否为以下情况担忧？</div>
+      <div class="title">- 服务内容 -</div>
       <div class="question-list">
         <div class="item">
-          <p>1.没思路无从入手？</p>
-          硕博团队，10年写作经验,一对一指导
+          <p>学术期刊投稿</p>
+          <div class="icon icon1"></div>
+          <div>各类别期刊，见刊快，费用低</div>
         </div>
         <div class="item">
-          <p>2.学科偏门？</p>
-          覆盖全学科，助你成功
+          <p>论文咨询</p>
+          <div class="icon icon2"></div>
+          <div>覆盖全学科，助你成功</div>
         </div>
         <div class="item">
-          <p>3.重复高被打回？</p>
-          论文去重，高效快速，正规可查
-        </div>
-      </div>
-      <div class="question-list active">
-        <div class="item">
-          <p>4.考不过毕业难？</p>
-          精选优秀导师，全程服务
+          <p>职称晋升</p>
+          <div class="icon icon3"></div>
+          <div>提供职称评审服务</div>
         </div>
         <div class="item">
-          <p>5.不知道如何修改？</p>
-          专业老师为您一对一服务
+          <p>出书服务</p>
+          <div class="icon icon4"></div>
+          <div>国内独著，电子出书等服务</div>
         </div>
       </div>
       <div class="company-wrap">
         <div class="intro">
-          <div class="company-intro">公司简介</div>
-          <div>
-            国内高端论文咨询机构，专业提供“论文”、“期刊”咨询，10年的运营沉淀让我们积累了丰富的团队经验建立了一套完善的服务体系。
+          <div class="company-intro">- 10万作者选择我们的理由 -</div>
+        </div>
+        <div class="reason-wrap"></div>
+      </div>
+      <div class="sort-bg"></div>
+      <div class="company-wrap service-wrap">
+        <div class="intro">
+          <div class="company-intro">- 服务流程 -</div>
+        </div>
+        <div class="question-list">
+          <div class="item">
+            <p>在线咨询</p>
+            <div class="icon icon1"></div>
+            <div>简单沟通需求</div>
+          </div>
+          <div class="item">
+            <p>加QQ/微沟通</p>
+            <div class="icon icon2"></div>
+            <div>深入对接，确保了解具体细节</div>
+          </div>
+          <div class="item">
+            <p>目标方案</p>
+            <div class="icon icon3"></div>
+            <div>制定高效的方案</div>
+          </div>
+          <div class="item">
+            <p>售后服务</p>
+            <div class="icon icon4"></div>
+            <div>保障您的权益，满意为止</div>
           </div>
         </div>
-        <div class="intro-list">
-          <div class="intro-item">
-            <div class="top">10年团队运营经验</div>
-            <div class="bottom">10年的运营沉淀，我们积累了丰富的服务经验及成熟的服务体系，更好的为广大用户提供服务！！！</div>
-          </div>
-          <div class="intro-item">
-            <div class="top">100余人师资团队</div>
-            <div class="bottom">现我们拥有100余人的论文团队，所合作的均为高校老师，论文咨询有保证！</div>
-          </div>
-          <div class="intro-item">
-            <div class="top">20多个学科覆盖</div>
-            <div class="bottom">
-              致力于在医学、管理、教育、经济、新闻、法律、中文、历史、政治、计算机、电子信息、化工、农业等20多个领域为您提供专业、优质、高效的论文咨询，助您成功！
+      </div>
+      <div class="company-wrap school-wrap">
+        <div class="intro">
+          <div class="company-intro">- 长期合作期刊及高校 -</div>
+        </div>
+        <div class="school-content">
+          <div class="left"></div>
+          <div class="school-list">
+            <div class="school-item">
+              <img src="../assets/HuNan.jpg" alt="" />
             </div>
-          </div>
-          <div class="intro-item">
-            <div class="top">1000余家杂志社</div>
-            <div class="bottom">
-              目前我们已拥有丰富的论文、期刊合作资源，以满足各个行业领域客户的需求，其中包括北大核心刊物、科技统计源核心刊物、SCI刊物，EI刊物，CSSCI刊物、以及国家级省级重点普通刊物！
+            <div class="school-item">
+              <img src="../assets/ZhongShan.jpg" alt="" />
+            </div>
+            <div class="school-item">
+              <img src="../assets/NanJing.jpg" alt="" />
+            </div>
+            <div class="school-item">
+              <img src="../assets/WuHan.jpg" alt="" />
+            </div>
+            <div class="school-item">
+              <img src="../assets/FuDan.jpg" alt="" />
+            </div>
+            <div class="school-item">
+              <img src="../assets/NanKai.jpg" alt="" />
             </div>
           </div>
         </div>
       </div>
       <div class="company-wrap service-wrap">
         <div class="intro">
-          <div class="company-intro">服务流程</div>
-          <div>
-            服务流程分步骤一步步有序的进行，每一步都会和客户进行确认，有利于确认需求及及时修改，服务过程中有问题或者建议也会及时与客户沟通。
-          </div>
+          <div class="company-intro">- 客户专属特权 -</div>
         </div>
-        <div class="intro-list active">
-          <div class="intro-item">
-            <div class="top">免费咨询</div>
-            <div class="bottom">
-              提供论文、期刊方面的免费咨询服务，可根据客户具体要求提供免费估价。客户可根据时间等方面的需求来安排论文、期刊等服务。
+        <div class="specail-list">
+          <div class="item">
+            <div class="icon icon1"></div>
+            <div class="text">
+              <p>企业信誉保障</p>
+              <div>网站备案可查</div>
             </div>
           </div>
-          <div class="intro-item">
-            <div class="top">支付定金</div>
-            <div class="bottom">再次与客户确定具体要求，支付定金，填具体要求表单，进行服务安排。</div>
-          </div>
-          <div class="intro-item">
-            <div class="top">客户验收</div>
-            <div class="bottom">
-              服务完成后，与客户进行验收流程，验收无问题后，再进行下一步。
+          <div class="item">
+            <div class="icon icon2"></div>
+            <div class="text">
+              <p>客户信息安全</p>
+              <div>客户资料/稿件严格保密，交易完成后销毁</div>
             </div>
           </div>
-          <div class="intro-item">
-            <div class="top">支付尾款</div>
-            <div class="bottom">
-              客户验收无问题后，支付尾款，售后服务长达几个月，由售后小姐姐一对一为您服务。
+          <div class="item">
+            <div class="icon icon3"></div>
+            <div class="text">
+              <p>一对一服务</p>
+              <div>确保0错误</div>
             </div>
           </div>
-          <div class="intro-item">
-            <div class="top">销毁文件</div>
-            <div class="bottom">
-              全程保护客户隐私，服务完成后销毁相关文件。
+          <div class="item">
+            <div class="icon icon4"></div>
+            <div class="text">
+              <p>正规期刊</p>
+              <div>全文网上收录可查</div>
             </div>
           </div>
         </div>
@@ -141,97 +170,136 @@ export default {
 
 <style lang="less" scoped>
 .page {
-  background: rgb(245, 245, 245);
+  padding-top: 80px;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  padding: 0 125px;
+  background: #fff;
+  .logo {
+    width: 66px;
+    height: 66px;
+    background: url(../assets/logo.png) no-repeat center/cover;
+  }
 }
 .nav-list {
   display: flex;
-  height: 60px;
-  color: #99ccff;
-  background: #212940;
-  font-weight: 600;
-  font-size: 18px;
+  align-items: center;
+  color: #333;
+  font-size: 16px;
   background: url(../assets/nav-bg.png) no-repeat center/top;
   .nav-item {
-    width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
+    &.one {
+      width: 72px;
+      padding-left: 40px;
+    }
+    &.two {
+      width: 104px;
+      padding-left: 40px;
+    }
+    &.three {
+      width: 140px;
+      height: 40px;
+      margin-left: 40px;
+      background: #3388ff;
+      color: #fff;
+    }
   }
 }
 .banner {
   height: 500px;
-  padding-top: 50px;
+  padding-top: 100px;
   text-align: center;
   font-size: 42px;
   color: #fff;
   background: url(../assets/banner-bg.jpg) no-repeat center/cover;
-  .red {
-    margin-bottom: 40px;
-  }
-  .label {
-    font-size: 30px;
-    margin-bottom: 70px;
-  }
   .label-list {
     display: flex;
     justify-content: space-around;
     padding: 0 20px;
-    margin-top: 40px;
+    margin-top: 100px;
     color: #fff;
     font-size: 20px;
     .label-item {
       display: flex;
-      align-items: center;
       flex-direction: column;
+      background: #fff;
+      align-items: center;
+      justify-content: center;
+      color: #333;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
     }
     .icon {
-      width: 43px;
-      height: 38px;
+      width: 42px;
+      height: 42px;
       background: no-repeat center/cover;
       margin-bottom: 10px;
       &.icon1 {
-        background-image: url(../assets/icon1.png);
+        background-image: url(../assets/1.png);
       }
       &.icon2 {
-        background-image: url(../assets/icon2.png);
+        background-image: url(../assets/2.png);
       }
       &.icon3 {
-        background-image: url(../assets/icon3.png);
+        background-image: url(../assets/3.png);
+      }
+      &.icon4 {
+        background-image: url(../assets/4.png);
       }
     }
   }
 }
 .content {
-  width: 1200px;
-  margin: auto;
   .title {
     text-align: center;
     font-size: 36px;
-    margin: 30px 0;
+    margin: 30px 0 20px;
     color: #333;
+    font-weight: 600;
   }
 }
 .question-list {
   display: flex;
   justify-content: space-between;
-  color: #fff;
-  &.active {
-    padding: 0 204px;
-  }
+  padding: 25px 25px 0;
+  color: #333;
   .item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 40px 0;
     align-items: center;
-    width: 385px;
-    height: 220px;
-    padding: 10px 4px 4px;
+    width: 330px;
+    height: 380px;
     border-radius: 4px;
-    margin-bottom: 17px;
-    background: url(../assets/question-bg.jpg) no-repeat center/cover;
+    background: #fff;
     font-size: 18px;
-    &.active {
-      background: none;
+    box-shadow: 0px 2px 10px 0px #eee;
+    .icon {
+      width: 120px;
+      height: 120px;
+      margin-top: -80px;
+      background: url(../assets/icon-1.png) no-repeat center/cover;
+      &.icon2 {
+        background-image: url(../assets/icon-2.png);
+      }
+      &.icon3 {
+        background-image: url(../assets/icon-3.png);
+      }
+      &.icon4 {
+        background-image: url(../assets/icon-4.png);
+      }
     }
     p {
       margin-bottom: 30px;
@@ -240,51 +308,79 @@ export default {
   }
 }
 .company-wrap {
-  margin-top: 20px;
-  .intro {
-    margin-bottom: 30px;
-    font-size: 18px;
+  .company-intro {
     text-align: center;
-    .company-intro {
-      font-size: 36px;
-      font-weight: 500;
-      margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 40px 0;
+  }
+  .reason-wrap {
+    width: 1420px;
+    height: 430px;
+    background: url(../assets/reason-bg.jpg) no-repeat center/cover;
+  }
+}
+.sort-bg {
+  width: 1420px;
+  height: 532px;
+  background: url(../assets/sorts-bg.jpg) no-repeat center/cover;
+}
+.school-content {
+  display: flex;
+  padding: 0 100px;
+  .left {
+    width: 585px;
+    height: 530px;
+    flex-shrink: 0;
+    margin-right: 20px;
+    background: url(../assets/qikan.jpg) no-repeat center/cover;
+  }
+  .school-list {
+    display: flex;
+    flex-wrap: wrap;
+    height: 530px;
+    justify-content: space-between;
+    padding: 50px 0 40px;
+    .school-item {
+      img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+      }
     }
   }
 }
-.intro-list {
+.specail-list {
   display: flex;
+  width: 1200px;
   justify-content: space-between;
-  color: #fff;
-  &.active {
-    .intro-item {
-      width: 228px;
+  margin: auto;
+  .item {
+    display: flex;
+    align-items: center;
+  }
+  .icon {
+    width: 44px;
+    height: 44px;
+    margin-right: 20px;
+    background: url(../assets/xin.png) no-repeat center/cover;
+    &.icon2 {
+      background-image: url(../assets/safe.png);
+    }
+    &.icon3 {
+      background-image: url(../assets/icon-2.png);
+    }
+    &.icon4 {
+      background-image: url(../assets/gui.png);
     }
   }
-  .intro-item {
-    width: 290px;
-    height: 280px;
+  .text {
     display: flex;
     flex-direction: column;
-    padding: 25px 10px 10px 10px;
-    border-radius: 4px;
-    margin-bottom: 15px;
-    font-size: 12px;
-    background: #fff;
-    color: #333;
-    font-size: 15px;
-    box-shadow: 0px 0px 10px 0px #eeeeee;
-    background: url(../assets/list-bg.jpg) no-repeat center/cover;
-    .top {
-      padding-bottom: 2px;
-      margin-bottom: 20px;
-      font-weight: 500;
-      border-bottom: 1px solid;
-      font-size: 28px;
-      color: rgb(75, 132, 245);
-    }
-    .bottom {
-      line-height: 1.7;
+    p {
+      font-size: 26px;
+      margin-bottom: 5px;
+      font-weight: 600;
     }
   }
 }
